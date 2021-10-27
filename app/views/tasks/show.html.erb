@@ -1,0 +1,7 @@
+<h2><%= @task.title %></h2>
+<p><%= @task.details %></p>
+
+<%= form_for(@task) do |f| %>
+  <%= f.check_box :completed %>
+ <%= f.submit %>
+<% end %>
